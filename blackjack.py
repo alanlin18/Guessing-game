@@ -33,14 +33,18 @@ score = sum(player)
 print(f"the current score is {score}") 
 print('\n')
 
-#instant win condition
-if score == 21:
-    print('Jackpot!')
+
     
     
 #player's turn 
 while True:
     
+    #instant win condition
+    if score == 21:
+        print('Jackpot!')
+        x=1
+        break
+        
     #lose if the score goes over 21
     if score > 21:
         print('You lose')
